@@ -1,0 +1,159 @@
+.container_wrap {
+    position: absolute;
+    height: 90%;
+    top: 0rem;
+    z-index: -1;
+    background: none;
+}
+
+.header__cream-image{
+    height: 100%;
+    z-index: 1;
+}
+
+.header__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title{
+    margin-top: 7rem;
+    font-size: var(--size-4xl);
+    font-family: var(--font-Lobster);
+    color: var(--color-white);
+    letter-spacing: 0.2rem;
+    z-index: 99999;
+}
+
+.header__subtitle {
+    color: var(--color-white);
+    font-family: var(--font-Noto);
+    z-index: 1;
+}
+
+.Navigation__logo {
+    display: none;
+ }
+ 
+
+/*  xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .header__title{
+        margin-top: 16rem;
+        font-size: var(--size-6xl);
+    }
+    .header__subtitle {
+        font-size: var(--size-2xl);
+    }
+    .navigation__mobile{
+        margin-left: 35rem;
+    }
+
+    .header__cream-image{
+        height: 100vh;
+    }
+
+}
+
+/* lg */
+ @media (min-width: 1024px) {
+    .header__title{
+        margin-top: 18rem;
+        font-size: 5.6rem;
+    }
+    .header__subtitle {
+        font-size: var(--size-3xl);
+    }
+    .header__button{
+        margin-top: 2rem;
+        font-size: var(--size-lg);
+    }
+    
+    .navigation__unlisted {
+        gap: 1rem;
+    }
+
+    .Navigation__logo {
+        display: flex;
+        color: var(--color-white);
+    }
+
+    .navigation__list {
+        font-size: var(--size-sm);
+    }
+
+    .navigation__button {
+        margin-left: 3rem;
+    }
+
+    .navigation__mobile{
+        display: none;
+    }
+
+    .header__cream-image{
+        height: 100%;
+    }
+
+ }
+
+/* xl */
+@media (min-width: 1280px) {
+    .header__title{
+        margin-top: 20rem;
+        font-size: 5.6rem;
+    }
+    
+
+
+    .navigation__button {
+        margin-left: 4rem;
+    }
+
+    .navigation__mobile{
+        display: none;
+    }
+    
+    .header__cream-image{
+        height:781px;
+        width: 100rem;
+    }
+
+} 
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .header__title{
+        margin-top: 20rem;
+        font-size: 5.6rem;
+    }
+    
+
+    .Navigation__logo {
+        display: flex;
+        color:var(--color-white);
+        margin-right: 4rem;
+    }
+
+
+    .navigation__button {
+        margin-left: 4rem;
+    }
+
+    .navigation__mobile{
+        display: none;
+    }
+    
+    .header__cream-image{
+        height:781px;
+        width: 100rem;
+    }
+} 

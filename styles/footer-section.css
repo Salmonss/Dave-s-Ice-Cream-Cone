@@ -1,0 +1,135 @@
+.Footer__container{
+    margin-top: 9rem;
+    width: 100%;
+    height: 450px;
+    background: var(--color-blue-950);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Footer__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.Footer__title{
+    font-size: var(--size-3xl);
+    font-family: var(--font-Lobster);
+    letter-spacing: 0.03rem;
+}
+
+.Footer__subtitle{
+    font-family: var(--font-Noto);
+    color: var(--color-amber-500);
+}
+
+
+/* Icon one */
+
+.Footer__icon__one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.icon__address{
+    width: var(--size-3xl);
+    margin-right: 0.20rem;
+}
+
+.icon__address-title {
+    font-family: var(--font-Noto);
+    font-size: var(--size-sm);
+}
+
+.icone__address-title::before{
+    content: ':';
+    margin-right: 0.15rem;
+}
+
+/* Icon two */
+
+.Footer__icon__two{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.icon__phone{
+    width: var(--size-3xl);
+    margin-right: 0.20rem;
+}
+
+.icone__phone-title {
+    font-family: var(--font-Noto);
+    font-size: var(--size-sm);
+}
+
+.icon__phone-title::before{
+    content: ':';
+    margin-right: 0.15rem;
+}
+
+/* Icon three */
+
+.Footer__icon__three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.icon__email{
+    width: var(--size-3xl);
+    margin-right: 0.20rem;
+}
+
+.icone__email-title {
+    font-family: var(--font-Noto);
+    font-size: var(--size-sm);
+}
+
+.icon__email-title::before{
+    content: ':';
+    margin-right: 0.15rem;
+}
+
+
+
+
+/*  xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .Footer__title{
+        font-size: var(--size-5xl);
+    }
+    
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* main size */
+/* @media (min-width: 1366px) {} */
+
+/* xxl */
+/* @media (min-width: 1440px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

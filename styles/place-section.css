@@ -1,0 +1,143 @@
+.Place__container{
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Place__image{
+    border-radius: 0.5rem;
+    width: 1000px;
+    height: 400px;
+}
+
+.Place__description{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.Place__subtitle{
+    font-family: var(--font-Noto);
+    color: var(--color-amber-500);
+    letter-spacing: 0.10rem;
+}
+
+.Place__title{
+    font-family: var(--font-Lobster);
+    font-size: var(--size-3xl);
+    letter-spacing: 0.03rem;
+}
+
+.Place__paragraph{
+    margin-top: 0.5rem;
+    font-family: var(--font-Noto);
+}
+
+
+
+/*  xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .Place__image{
+        width: 500px;
+        height: 400px;
+    }
+
+    .Place__paragraph{
+        padding: 0rem 3rem 0rem 3rem;
+    }
+} 
+
+/* lg */
+@media (min-width: 1024px) {
+    .Place__container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        margin-top: 13rem;
+    }
+
+    .Place__image{
+        width: 2000px;
+        height: 400px;
+    }
+
+    .Place__image-container{
+        margin-right: 3rem;
+    }
+
+    .Place__description{
+        margin-left: 3rem;
+        text-align: right;
+    }
+
+    .Place__paragraph{
+        padding: 0%;
+        padding-left: 3rem;
+    }
+    
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .Place__image{
+        width: 2000px;
+        height: 400px;
+    }
+
+    .Place__image-container{
+        margin-right: 5rem;
+    }
+
+    .Place__description{
+        margin-left: 5rem;
+    }
+
+
+    
+}
+
+/* main size */
+@media (min-width: 1366px) {
+
+    .Place__image-container{
+        margin-right: 11rem;
+    }
+
+    .Place__description{
+        margin-left: 5rem;
+    }
+
+    .Place__description{
+        padding-left: 2rem;
+    }
+}
+
+/* xxl */
+@media (min-width: 1440px) {
+    .Place__image-container{
+        margin-right: 11rem;
+    }
+
+    .Place__description{
+        margin-left: 5rem;
+    }
+
+} 
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .Place__image-container{
+        margin-right: 11rem;
+    }
+
+    .Place__description{
+        margin-left: 5rem;
+    }
+}

@@ -1,0 +1,152 @@
+.Owner__container {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Owner__image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.Owner__image{
+    border-radius: 0.5rem;
+}
+
+.Owner__description{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.Owner__subtitle{
+    font-family: var(--font-Noto);
+    font-size: var(--size-base);
+    color: var(--color-amber-500);
+}
+
+.Owner__title{
+    font-family: var(--font-Lobster);
+    font-size: var(--size-3xl);
+    letter-spacing: 0.03rem;
+}
+
+.Owner__paragraph {
+    margin-top: 0.5rem;
+    font-family: var(--font-Noto);
+}
+
+
+
+
+/*  xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .Owner__image{
+        width: 60%;
+    }
+    
+    .Owner__paragraph {
+        padding: 0rem 3rem 0rem 3rem;
+    }
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .Owner__image{
+        width: 3000px;
+        height: 350px;
+    }
+    
+    .Owner__paragraph {
+        font-size: var(--size-base);
+    }
+
+    .Owner__image-container {
+        padding-left: 0%;
+        margin-left: 3rem;
+    }
+
+    .Owner__container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 13rem;
+    }
+    
+    .Owner__description{
+        margin-right: 3rem;
+        text-align: left;
+    }
+
+    .Owner__paragraph {
+        padding-left: 0%;
+    }
+} 
+
+/* xl */
+@media (min-width: 1280px) {
+    
+    .Owner__image{
+        width: 2500px;
+        height: 350px;
+    }
+    
+
+    .Owner__image-container {
+        padding-left: 0%;
+        margin-left: 5rem;
+    }
+
+    
+    .Owner__description{
+        margin-right: 5rem;
+        text-align: left;
+    }
+
+
+}
+
+/* main size */
+@media (min-width: 1366px) {
+    
+    .Owner__image-container {
+        margin-left: 11rem;
+    }
+
+    
+    .Owner__description{
+        margin-right: 5rem;
+    }
+}
+
+/* xxl */
+@media (min-width: 1440px) {
+    .Owner__image-container {
+        margin-left: 11rem;
+    }
+
+    
+    .Owner__description{
+        margin-right: 5rem;
+    }
+} 
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .Owner__image-container {
+        margin-left: 11rem;
+    }
+
+    
+    .Owner__description{
+        margin-right: 5rem;
+    }
+} 

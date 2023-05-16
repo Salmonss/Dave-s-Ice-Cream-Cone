@@ -1,0 +1,869 @@
+.services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+
+.services__container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 9rem;
+}
+
+.services__subtitle{
+    color: var(--color-amber-500);
+    font-family: var(--font-Noto);
+}
+
+.services__title {
+    font-family: var(--font-Lobster);
+    letter-spacing: 0.06rem;
+    font-size: var(--size-3xl);
+}
+
+
+/* Item 1 */
+
+
+.services__container-item{
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 250px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px gray;
+    transition: all 0.3s ease-in-out;
+}
+
+.services__container-item:hover {
+    background: var(--color-blue-950);
+    color: var(--color-white);
+    transform: translateY(-5px);
+}
+
+.services__container-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+}
+
+.services__contaienr-item1-header{
+    font-family: var(--font-Lobster);
+    margin-top: 0.5rem;
+}
+
+.milk-shake-button{
+    font-size: var(--size-sm);
+    margin-top: 0.2rem;
+}
+
+
+/* Modal one*/
+.modal_container_item{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    height: 470px;
+    border-radius:0.5rem ;
+    left: 0;
+    top: 20%;
+    background-color: var(--color-blue-950);
+    z-index: 10;
+}
+
+
+.modal_navigation{
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.icon-x{
+    width: var(--size-3xl);
+    cursor: pointer;
+    color:  var(--color-white);
+}
+
+.modal__header{
+    font-family: var(--font-Lobster);
+    font-size: var(--size-3xl);
+    margin-top: 1rem;
+    color:  var(--color-white);
+}
+
+
+.modal_information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: var(--color-white);
+}
+
+.modal__description{
+    font-size: var(--size-base);
+    text-align: center;
+}
+
+.modale__image{
+    height: 200px;
+    width: 200px;
+    border-radius: 1rem;
+}
+
+/* Modal 2 */
+
+.modal_container_two{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    height: 470px;
+    border-radius:0.5rem ;
+    left: 0;
+    top: 20%;
+    background-color: var(--color-blue-950);
+    z-index: 10;
+}
+
+.icon-x-sandwich{
+    width: var(--size-3xl);
+    cursor: pointer;
+    color:  var(--color-white);
+}
+
+/* Modal 3 */
+
+.modal_container_three{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    height: 470px;
+    border-radius:0.5rem ;
+    left: 0;
+    top: 20%;
+    background-color: var(--color-blue-950);
+    z-index: 10;
+}
+
+.icon-x-float{
+    width: var(--size-3xl);
+    cursor: pointer;
+    color:  var(--color-white);
+}
+
+/* Modal 4 */
+
+.modal_container_four{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    height: 470px;
+    border-radius:0.5rem ;
+    left: 0;
+    top: 20%;
+    background-color: var(--color-blue-950);
+    z-index: 10;
+}
+
+.icon-x-cake{
+    width: var(--size-3xl);
+    cursor: pointer;
+    color:  var(--color-white);
+}
+
+/* Modal 5 */
+
+.modal_container_five{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    height: 470px;
+    border-radius:0.5rem ;
+    left: 0;
+    top: 20%;
+    background-color: var(--color-blue-950);
+    z-index: 10;
+}
+
+.icon-x-sundaes{
+    width: var(--size-3xl);
+    cursor: pointer;
+    color:  var(--color-white);
+}
+
+/* Modal 6 */
+
+.modal_container_six{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    height: 470px;
+    border-radius:0.5rem ;
+    left: 0;
+    top: 20%;
+    background-color: var(--color-blue-950);
+    z-index: 10;
+}
+
+.icon-x-coffee{
+    width: var(--size-3xl);
+    cursor: pointer;
+    color:  var(--color-white);
+}
+
+
+
+
+
+/*  xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .services__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+        grid-gap: 1rem
+    }
+    .services__container_large{
+        margin-left: 6rem;
+        margin-top: 3rem;
+    }
+
+    .services__container-header{
+        margin-top: 10rem;
+    }
+
+    /* Mdal one */
+    .modal_container_item{
+        height: 450px;
+        width: 500px;
+        left: 140px;
+    }
+
+    .icon-x{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal two*/
+    .modal_container_two{
+        height: 450px;
+        width: 500px;
+        left: 140px;
+    }
+
+    .icon-x-sandwich{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal three*/
+    .modal_container_three{
+        height: 450px;
+        width: 500px;
+        left: 140px;
+    }
+
+    .icon-x-float{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal four*/
+    .modal_container_four{
+        height: 450px;
+        width: 500px;
+        left: 140px;
+    }
+
+    .icon-x-cake{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal five*/
+    .modal_container_five{
+        height: 450px;
+        width: 500px;
+        left: 140px;
+    }
+
+    .icon-x-sundaes{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal six*/
+    .modal_container_six{
+        height: 450px;
+        width: 500px;
+        left: 140px;
+    }
+
+    .icon-x-coffee{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+
+
+}
+
+
+
+/* lg */
+@media (min-width: 1024px) {
+    .services__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 200px));
+        grid-gap: 2rem
+    }
+    .services__container_large{
+        margin-left: 7rem;
+        margin-top: 3rem;
+    }
+
+    .services__container-header{
+        margin-top: 11rem;
+    }
+
+    /* Mdal one */
+    .modal_container_item{
+        height: 450px;
+        width: 500px;
+        left: 260px;
+        top: 100px;
+    }
+
+    .icon-x{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal two*/
+    .modal_container_two{
+        height: 450px;
+        width: 500px;
+        left: 260px;
+        top: 100px;
+    }
+
+    .icon-x-sandwich{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal three*/
+    .modal_container_three{
+        height: 450px;
+        width: 500px;
+        left: 260px;
+        top: 100px;
+    }
+
+    .icon-x-float{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal four*/
+    .modal_container_four{
+        height: 450px;
+        width: 500px;
+        left: 260px;
+        top: 100px;
+    }
+
+    .icon-x-cake{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal five*/
+    .modal_container_five{
+        height: 450px;
+        width: 500px;
+        left: 260px;
+        top: 100px;
+    }
+
+    .icon-x-sundaes{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal six*/
+    .modal_container_six{
+        height: 450px;
+        width: 500px;
+        left: 260px;
+        top: 100px;
+    }
+
+    .icon-x-coffee{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+}
+
+
+/* xl */
+@media (min-width: 1280px) {
+    .services__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+        grid-gap: 1rem
+    }
+    .services__container_large{
+        margin-left: 12rem;
+        margin-top: 3rem;
+    }
+
+    .services__container-header{
+        margin-top: 12rem;
+    }
+
+    /* Mdal one */
+    .modal_container_item{
+        height: 450px;
+        width: 500px;
+        left: 400px;
+        top: 100px;
+    }
+
+    .icon-x{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal two*/
+    .modal_container_two{
+        height: 450px;
+        width: 500px;
+        left: 400px;
+        top: 100px;
+    }
+
+    .icon-x-sandwich{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal three*/
+    .modal_container_three{
+        height: 450px;
+        width: 500px;
+        left: 400px;
+        top: 100px;
+    }
+
+    .icon-x-float{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal four*/
+    .modal_container_four{
+        height: 450px;
+        width: 500px;
+        left: 400px;
+        top: 100px;
+    }
+
+    .icon-x-cake{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal five*/
+    .modal_container_five{
+        height: 450px;
+        width: 500px;
+        left: 400px;
+        top: 100px;
+    }
+
+    .icon-x-sundaes{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal six*/
+    .modal_container_six{
+        height: 450px;
+        width: 500px;
+        left: 400px;
+        top: 100px;
+    }
+
+    .icon-x-coffee{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+}
+
+/* Main size */
+@media (min-width: 1366px) {
+    .services__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+        grid-gap: 1rem
+    }
+    .services__container_large{
+        margin-left: 14rem;
+        margin-top: 3rem;
+    }
+
+    .services__container-header{
+        margin-top: 14rem;
+    }
+
+    /* Mdal one */
+    .modal_container_item{
+        height: 450px;
+        width: 500px;
+        left: 450px;
+        top: 150px;
+    }
+
+    .icon-x{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal two*/
+    .modal_container_two{
+        height: 450px;
+        width: 500px;
+        left: 450px;
+        top: 150px;
+    }
+
+    .icon-x-sandwich{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal three*/
+    .modal_container_three{
+        height: 450px;
+        width: 500px;
+        left: 450px;
+        top: 150px;
+    }
+
+    .icon-x-float{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal four*/
+    .modal_container_four{
+        height: 450px;
+        width: 500px;
+        left: 450px;
+        top: 150px;
+    }
+
+    .icon-x-cake{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal five*/
+    .modal_container_five{
+        height: 450px;
+        width: 500px;
+        left: 450px;
+        top: 150px;
+    }
+
+    .icon-x-sundaes{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal six*/
+    .modal_container_six{
+        height: 450px;
+        width: 500px;
+        left: 450px;
+        top: 150px;
+    }
+
+    .icon-x-coffee{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+}
+
+@media (min-width: 1440px) {
+    .services__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+        grid-gap: 1rem
+    }
+    .services__container_large{
+        margin-left: 18rem;
+        margin-top: 3rem;
+    }
+
+    .services__container-header{
+        margin-top: 15rem;
+    }
+
+    /* Mdal one */
+    .modal_container_item{
+        height: 450px;
+        width: 500px;
+        left: 500px;
+        top: 150px;
+    }
+
+    .icon-x{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal two*/
+    .modal_container_two{
+        height: 450px;
+        width: 500px;
+        left: 500px;
+        top: 150px;
+    }
+
+    .icon-x-sandwich{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal three*/
+    .modal_container_three{
+        height: 450px;
+        width: 500px;
+        left: 500px;
+        top: 150px;
+    }
+
+    .icon-x-float{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal four*/
+    .modal_container_four{
+        height: 450px;
+        width: 500px;
+        left: 500px;
+        top: 150px;
+    }
+
+    .icon-x-cake{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal five*/
+    .modal_container_five{
+        height: 450px;
+        width: 500px;
+        left: 500px;
+        top: 150px;
+    }
+
+    .icon-x-sundaes{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal six*/
+    .modal_container_six{
+        height: 450px;
+        width: 500px;
+        left: 500px;
+        top: 150px;
+    }
+
+    .icon-x-coffee{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .services__container_large{
+        margin-left: 20rem;
+        margin-top: 3rem;
+    }
+
+    .services__container-header{
+        margin-top: 16rem;
+    }
+
+    /* Mdal one */
+    .modal_container_item{
+        height: 450px;
+        width: 500px;
+        left: 520px;
+        top: 150px;
+    }
+
+    .icon-x{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal two*/
+    .modal_container_two{
+        height: 450px;
+        width: 500px;
+        left: 520px;
+        top: 150px;
+    }
+
+    .icon-x-sandwich{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal three*/
+    .modal_container_three{
+        height: 450px;
+        width: 500px;
+        left: 520px;
+        top: 150px;
+    }
+
+    .icon-x-float{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal four*/
+    .modal_container_four{
+        height: 450px;
+        width: 500px;
+        left: 520px;
+        top: 150px;
+    }
+
+    .icon-x-cake{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal five*/
+    .modal_container_five{
+        height: 450px;
+        width: 500px;
+        left: 520px;
+        top: 150px;
+    }
+
+    .icon-x-sundaes{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+
+    /* Mdal six*/
+    .modal_container_six{
+        height: 450px;
+        width: 500px;
+        left: 520px;
+        top: 150px;
+    }
+
+    .icon-x-coffee{
+        width: var(--size-3xl);
+        margin-right: 1rem;
+        cursor: pointer;
+        color:  var(--color-white);
+    }
+} 
